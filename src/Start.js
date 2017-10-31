@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { StartWrapper, Face, FloatingText, Button, Text} from './styles/Start.style'
-import { Link } from 'react-router-dom';
 
 class Start extends Component {
   render() {
@@ -20,9 +19,7 @@ class Start extends Component {
         <FloatingText right posY = "5%" posX="5%" speed="70s">добро пожаловать</FloatingText> 
         <Text posX="8%" posY="25%">Stop writing your flashcards</Text>
         <Text posX="10%" posY="35%">Using your voice is faster</Text>
-        <Link to = "/checkout">
-          <Button> Get Started</Button>
-        </Link>
+        <Button> Get Started</Button>
       </StartWrapper>
     );
   }
